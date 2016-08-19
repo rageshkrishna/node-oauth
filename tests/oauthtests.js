@@ -528,6 +528,27 @@ vows.describe('OAuth').addBatch({
              request.end();
            }
          },
+	 'if a content_type is passed': {
+	   'it should use the content_type': function(oa) {
+             var op= oa._createClient;
+             try {
+               oa._createClient= function( port, hostname, method, path, headers, sshEnabled ) {
+                 assert.equal(headers["Content-Type"], "unicorn/encoded");
+                 return {
+                   write: function(data){
+                   },
+                   on: function() {},
+                   end: function() {
+                   }
+                 };
+                }
+               var request= oa.get("http://foo.com/blah", "token", "token_secret", "unicorn/encoded")
+             }
+             finally {
+               oa._createClient= op;
+             }
+	   }
+	 },
          'if a callback is passed' : {
            "it should call the internal request's end method and return nothing": function(oa) {
              var callbackCalled= false;
