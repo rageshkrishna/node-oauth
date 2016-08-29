@@ -1,10 +1,10 @@
-{ "name" : "oauth"
-, "description" : "Library for interacting with OAuth 1.0, 1.0A, 2 and Echo.  Provides simplified client access and allows for construction of more complex apis and OAuth providers."
+{ "name" : "shippable-bbs-oauth"
+, "description" : "A fork of the oauth package that can talk to BitBucket Server"
 , "version" : "0.9.14"
 , "directories" : { "lib" : "./lib" }
 , "main" : "index.js"
-, "author" : "Ciaran Jessup <ciaranj@gmail.com>"
-, "repository" : { "type":"git", "url":"http://github.com/ciaranj/node-oauth.git" }
+, "author" : "Ragesh Krishna <ragesh@shippable.com>"
+, "repository" : { "type":"git", "url":"http://github.com/rageshkrishna/node-oauth.git" }
 , "devDependencies": {
     "vows": "0.5.x"
   }
