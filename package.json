@@ -1,6 +1,6 @@
 { "name" : "shippable-bbs-oauth"
 , "description" : "A fork of the oauth package that can talk to BitBucket Server"
-, "version" : "0.9.14"
+, "version" : "0.9.15"
 , "directories" : { "lib" : "./lib" }
 , "main" : "index.js"
 , "author" : "Ragesh Krishna <ragesh@shippable.com>"
@@ -13,7 +13,7 @@
   }
 , "licenses" :
   [ { "type" : "MIT"
-    , "url" : "http://github.com/ciaranj/node-oauth/raw/master/LICENSE"
+    , "url" : "http://github.com/rageshkrishna/node-oauth/raw/master/LICENSE"
     }
   ]
 }
